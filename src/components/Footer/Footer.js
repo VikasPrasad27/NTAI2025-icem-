@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import {FaFacebookSquare, FaInstagram, FaLinkedin, FaMailBulk, FaPhone} from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaLinkedin, FaMailBulk, FaPhone } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import homelogo from "../../assets/images/Committee/homelogo.png"
 import '../../App.css';
@@ -37,10 +37,19 @@ export default function Footer() {
                         <Col className="d-flex justify-content-center me-5 mb-4" xs={12} md={4} lg={3}>
                             <center>
                                 <Row>
-                                    <a href="https://indiraicem.ac.in/home">
-                                        <img src={homelogo} alt="icemLogo" className="img-fluid mx-auto mb-4"
-                                             style={{ maxWidth: '400px' }} />
-                                    </a>
+                                <a href="https://indiraicem.ac.in/home">
+  <img 
+    src={homelogo} 
+    alt="icemLogo" 
+    className="img-fluid mx-auto mb-4" 
+    style={{ 
+      maxWidth: '350px', 
+      backgroundColor: '#f0f0f0',  // Light grey background color
+      padding: '10px',  // Optional: add some padding to make the background more visible
+      borderRadius: '10px'  // Optional: rounded corners for a softer look
+    }}
+  />
+</a>
                                 </Row>
                             </center>
                         </Col>
@@ -50,19 +59,19 @@ export default function Footer() {
                                     Useful links
                                 </h6>
                                 <a href="https://www.facebook.com/ICEM.AVIRAT"
-                                   className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
+                                    className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
                                     <FaFacebookSquare /> Facebook
                                 </a>
                                 <a href="mailto:research@indiraicem.ac.in"
-                                   className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
+                                    className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
                                     <FaMailBulk /> research@indiraicem.ac.in
                                 </a>
-                                <a href="https://indiraicem.ac.in/" 
-                                   className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
+                                <a href="https://indiraicem.ac.in/"
+                                    className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
                                     <TbWorld /> Indira College of Engineering and Management
                                 </a>
-                                <a href="https://indiraicem.ac.in/" 
-                                   className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
+                                <a href="https://indiraicem.ac.in/"
+                                    className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
                                     <TbWorld /> NTAI25
                                 </a>
                             </div>
@@ -76,7 +85,7 @@ export default function Footer() {
                                 <p className="contact-title text-white mb-2">Dr. Poorna Shankar</p>
                                 <p className="contact-info text-white-50 mb-2">Indira College of Engineering and Management</p>
                                 <p className="contact-info text-white-50 mb-0">
-                                    <FaPhone className="me-2"/>+91 8237816742
+                                    <FaPhone className="me-2" />+91 8237816742
                                 </p>
                             </div>
                             <div className="border rounded-3 p-3 mb-3 contact-box" style={{
@@ -86,20 +95,20 @@ export default function Footer() {
                                 <p className="contact-title text-white mb-2">Dr. Soumitra Das</p>
                                 <p className="contact-info text-white-50 mb-2">Indira College of Engineering and Management</p>
                                 <p className="contact-info text-white-50 mb-0">
-                                    <FaPhone className="me-2"/>+91 92703 64627
+                                    <FaPhone className="me-2" />+91 92703 64627
                                 </p>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </section>
-            <div className="text-center p-4" style={{ 
+            <div className="text-center p-4" style={{
                 borderTop: '1px solid rgba(255, 255, 255, 0.1)',
                 color: 'rgba(255, 255, 255, 0.8)'
             }}>
                 © 2025 Copyright :
-                <a className="text-white ms-1 text-decoration-none fw-bold hover:text-opacity-80" 
-                   href="https://indiraicem.ac.in/">NTAI25</a>
+                <a className="text-white ms-1 text-decoration-none fw-bold hover:text-opacity-80"
+                    href="https://indiraicem.ac.in/">NTAI25</a>
             </div>
         </footer>
     );
