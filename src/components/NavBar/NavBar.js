@@ -75,7 +75,7 @@ export default function NavBar() {
                                 className="dropdown-item"
                                 onClick={handleLinkClick}
                             >
-                                Guests
+                                Speaker
                             </NavDropdown.Item>
                             <NavDropdown.Item 
                                 as={isAboutPage ? ScrollLink : RouterLink} 
@@ -119,7 +119,7 @@ export default function NavBar() {
                             className="mx-3 custom-nav-link text-white" 
                             onClick={handleLinkClick}
                         >
-                            Objective
+                            Objectives
                         </Nav.Link>
                         <Nav.Link 
                             as={RouterLink} 
