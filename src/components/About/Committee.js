@@ -71,10 +71,10 @@ const Committee = () => {
                   style={{
                     width: '100%',
                     height: '300px',
-                    objectFit: 'cover',
+                    objectFit: 'fill',
                   }}
                 />
-                <div className="card-body">
+                <div className="card-body text-center">
                   <h5 className="card-title">{member.name}</h5>
                   <p className="card-text">{member.title}</p>
                 </div>
@@ -100,11 +100,11 @@ const Committee = () => {
                   style={{
                     width: '100%',
                     height: '300px',
-                    objectFit: 'cover',
+                    objectFit: 'fill',
                   }}
                 />
-                <div className="card-body">
-                  <h5 className="card-title">{chair.name}</h5>
+                <div className="card-body text-center">
+                  <h5 className="card-title ">{chair.name}</h5>
                   <p className="card-text">{chair.title}</p>
                 </div>
               </div>
@@ -128,11 +128,11 @@ const Committee = () => {
                   alt={member.name}
                   style={{
                     width: '100%',
-                    height: '250px',
-                    objectFit: 'cover',
+                    height: '300px',
+                    objectFit: 'fill',
                   }}
                 />
-                <div className="card-body">
+                <div className="card-body text-center">
                   <h5 className="card-title">{member.name}</h5>
                   <p className="card-text">{member.title}</p>
                 </div>
