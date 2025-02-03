@@ -47,7 +47,6 @@ export default function About () {
             <img className="shape4 w-25" src={Shape3} alt="Shape4"/>
             <img className="ConferenceTracks w-25" src={ConferenceTracks} alt="ConferenceTracksImg"/>
             
-
             <section 
     id="ICLVE-2023" 
     style={{
@@ -66,12 +65,12 @@ export default function About () {
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: 'rgba(255, 255, 255, 0.5)', // Lighten overlay to make the background visible
+        backgroundColor: 'rgba(255, 255, 255, 0.7)', // Adjusted to make the overlay lighter for better text visibility
         zIndex: 1
     }}></div>
 
     {/* Content */}
-    <div style={{ position: 'relative', zIndex: 2 }}>
+    <div style={{ position: 'relative', zIndex: 2}}>
         <div className="row">
             <div className="col"></div>
             <div className="col">
@@ -85,7 +84,7 @@ export default function About () {
         <div className="ICLVE">
             <center className="position-relative">
                 <div className="row w-75 text-center mx-auto">
-                    <p className=" bg-opacity-50 p-4 rounded-3">
+                    <p className="bg-opacity-75 p-4 rounded-3" style={{ zIndex: 2 }}>
                         Welcome to the "Next-Gen Technology and AI for a Sustainable Future" conference, hosted by Indira College of Engineering and Management, Pune. This premier event brings together leading experts, researchers, and innovators from around the globe to explore the latest advancements in technology and artificial intelligence, with a focus on creating a sustainable future.
                     </p>
                 </div>
@@ -97,7 +96,7 @@ export default function About () {
                 <br/>
                 
                 <div className="row w-75 text-center mx-auto mt-12">
-                    <p className="bg-opacity-50 p-4 rounded-3">
+                    <p className=" bg-opacity-75 p-4 rounded-3" style={{ zIndex: 2 }}>
                         Indira College of Engineering and Management (ICEM), established in 2007, is a premier autonomous institution under the Indira Group of Institutes, affiliated with Savitribai Phule Pune University and accredited by NAAC. ICEM offers a range of undergraduate and postgraduate programs in engineering and management, with a strong focus on innovation, research, and sustainable development. The college boasts state-of-the-art facilities, industry collaborations, and a commitment to shaping future leaders and innovators. Join us at ICEM for the "Next-Gen Technology and AI for a Sustainable Future" conference to explore cutting-edge advancements and sustainable solutions.
                     </p>
                 </div>
@@ -107,6 +106,7 @@ export default function About () {
         </div>
     </div>
 </section>
+
 
 
             <section id="CONFERENCE_TRACKS">
@@ -169,47 +169,74 @@ export default function About () {
                 </div>
             </section>
 
-            <section id="key-note-speaker">
-    <div className="container mt-5 text-center">
-        <h2 className="mb-4 mt-4">Keynote Speaker</h2>
-        <div className="row justify-content-center">
-            <div
-                className="col-lg-4 col-md-6 mb-4 col-sm-6 m-3 border border-dark border-2 d-flex flex-column align-items-center text-center">
-                <img src={mainguest1} className="w-100 rounded-5 my-3" alt="Keynote Speaker" style={{
-                    width: '100%',
-                    height: '550px',
-                    objectFit: 'center',
-                }} />
-                <h5 className="text-orange" style={{ color: "orangered" }}>Prof. Dato Shamala Subramaniam</h5>
-                <h6>Professor and Dean</h6>
-                <h6>Faculty of Computer Science and Information Technology, Universiti Putra Malaysia</h6>
-            </div>
+            <section id="key-note-speaker" className="py-5">
+  <div className="container text-center">
+    <h2 className="mb-5">Keynote Speaker</h2>
+    
+    {/* Speaker 1 */}
+    <div className="row justify-content-center mb-4">
+      <div className="col-lg-4 col-md-6 col-sm-8 mb-4">
+        <div className="border border-dark border-2 rounded-5 p-4 text-center">
+          <img src={mainguest1} className="w-100 rounded-5 mb-3" alt="Keynote Speaker 1" 
+               style={{ height: '350px', objectFit: 'fill' }} />
+          <h5 style={{ color: "orangered" }}>Prof. Dato Shamala Subramaniam</h5>
+          <h6>Professor and Dean</h6>
+          <h6>Faculty of Computer Science and Information Technology, Universiti Putra Malaysia</h6>
         </div>
-        <p>She serves as the Chairman for Ph.D. and Master’s Thesis Supervisory Committee (17 graduated and 9 currently pursuing). She has a high number of cited publications in reputed high impact and indexed journals. She has authored Chapter (s) in book and lecture series. She has been recognized as a Member of Editorial Advisory Board in national and international journals. She has addressed keynote in several national and international conferences.
-                        </p>
-                        <p>She specializes in the area of wireless networks and distributed systems. She has secured a wide-spectrum of research grants encompassing from fundamental to applied. Her research grants in the area of wireless network and distributed systems is approximately RM 4.1 Million.   Prof Shamala’s research in integrating wireless and distributed into sports has resulted in the first Games Management System developed in partnership with the National Sports Council.</p>
-                        <p>The project known as iGames has evolved from being used domestically to cater one of the largest multi-sports Games (SUKMA 2018 and SUKMA 2022) to an international platform which was the South East Asia Games in Cambodia 2023. Subsequently, another research project known as the IoSRocks© has been copyrighted and has been harnessed to become commercially viable. She has founded the startup U Empower Sdn Bhd through the university program known as Innohub which is aimed at transcending research to the commercialization domain. Prof Shamala is a Council Member of the Academy Professors of Malaysia. Prof Shamala is very passionate about sports.
-                        </p>
-                        <p>
-                        The IOSRocks© has won two gold medals at International Exhibition and won the Best Innovation Award at the International Innovation, Technology and Research Exhibition and Conference (ITREXC 2023) which was held in conjunction with the 4th Selangor R&D & Innovation Exhibition (SRIE).   Prof Shamala is a Council Member of the Academy Professors of Malaysia.  Prof Shamala is very passionate about sports.  She represented the national women’s senior and junior hockey team and has served in many national and international administrative sports positions.  
-                        </p>
-                        <p>These include the positions she held as the Vice President of the Olympic Council of Malaysia (OCM), Board Member of the Asian Hockey Federation, Deputy President of the Malaysian Hockey Confederation, Director of the National Olympic Academy, Board Member of the National Sports Institute, Director of the Women’s Division of the National Sports Council and was a coordinator of the International Olympic Academy Youth Session in Greece.  
-                        </p>
-        <div className="row justify-content-center">
-            <div
-                className="col-lg-4 col-md-6 mb-4 col-sm-6 m-3 border border-dark border-2 d-flex flex-column align-items-center text-center">
-                <img src={mainguest2} className="w-100 rounded-5 my-3" alt="Keynote Speaker" style={{
-                    width: '100%',
-                    height: '450px',
-                    objectFit: 'center',
-                }} />
-                <h5 className="text-orange" style={{ color: "orangered" }}>Mr. Krishnakumar Sundaram</h5>
-                <h6>Vice President Corporate Strategy Keisoku Engineering System Co.Ltd</h6>
-                <h6>Tokyo, Japan</h6>
-            </div>
-        </div>
+      </div>
     </div>
+
+    {/* Description Speaker 1 */}
+    <div className="row justify-content-center">
+      <div className="col-lg-8 col-md-10 col-sm-12">
+        <p>
+          She serves as the Chairman for Ph.D. and Master’s Thesis Supervisory Committee (17 graduated and 9 currently pursuing). 
+          She has a high number of cited publications in reputed high-impact and indexed journals. 
+          She has authored Chapter(s) in books and lecture series. She has been recognized as a Member of the Editorial Advisory Board in national and international journals. 
+          She has addressed keynote speeches at several national and international conferences.
+        </p>
+        <p>
+          She specializes in the area of wireless networks and distributed systems. 
+          She has secured a wide-spectrum of research grants encompassing fundamental to applied research. 
+          Her research grants in the area of wireless networks and distributed systems amount to approximately RM 4.1 Million. 
+          Prof Shamala’s research in integrating wireless and distributed technologies into sports has resulted in the first Games Management System, developed in partnership with the National Sports Council.
+        </p>
+        <p>
+          The project known as iGames has evolved from being used domestically to cater to one of the largest multi-sports Games (SUKMA 2018 and SUKMA 2022) 
+          and has expanded into an international platform, as seen in the South East Asia Games in Cambodia 2023. 
+          Subsequently, another research project known as IoSRocks© has been copyrighted and harnessed for commercial viability. 
+          She founded the startup U Empower Sdn Bhd through the university program known as Innohub, aimed at transcending research into commercialization. 
+          Prof Shamala is also a Council Member of the Academy Professors of Malaysia and is passionate about sports.
+        </p>
+        <p>
+          The IoSRocks© project has won two gold medals at international exhibitions and won the Best Innovation Award at the International Innovation, 
+          Technology, and Research Exhibition and Conference (ITREXC 2023), held in conjunction with the 4th Selangor R&D & Innovation Exhibition (SRIE). 
+          Prof Shamala is also passionate about sports, having represented Malaysia's national women’s senior and junior hockey teams and holding many national and international sports administrative positions.
+        </p>
+        <p>
+          These positions include Vice President of the Olympic Council of Malaysia (OCM), Board Member of the Asian Hockey Federation, Deputy President of the Malaysian Hockey Confederation, 
+          Director of the National Olympic Academy, Board Member of the National Sports Institute, Director of the Women’s Division of the National Sports Council, 
+          and coordinator of the International Olympic Academy Youth Session in Greece.
+        </p>
+      </div>
+    </div>
+
+    {/* Speaker 2 */}
+    <div className="row justify-content-center mt-5">
+      <div className="col-lg-4 col-md-6 col-sm-8">
+        <div className="border border-dark border-2 rounded-5 p-4 text-center">
+          <img src={mainguest2} className="w-100 rounded-5 mb-3" alt="Keynote Speaker 2" 
+               style={{ height: '350px', objectFit: 'cover' }} />
+          <h5 style={{ color: "orangered" }}>Mr. Krishnakumar Sundaram</h5>
+          <h6>Vice President Corporate Strategy</h6>
+          <h6>Keisoku Engineering System Co.Ltd, Tokyo, Japan</h6>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 
             {/*key note speaker*/}
             <section id="key-note-speaker" className="my-5">
@@ -247,8 +274,13 @@ export default function About () {
         <div className="card shadow h-100 p-3 m-2">
           <img 
             src={chetan} 
-            className="card-img-top w-50 mx-auto border border-dark border-2"
+            className="card-img-top w-50  mx-auto border border-dark border-2"
             alt="Prof. Chetan Wakalkar"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">Prof. Chetan Wakalkar</h5>
@@ -263,6 +295,11 @@ export default function About () {
             src={Pandit} 
             className="card-img-top w-50 mx-auto border border-dark border-2"
             alt="Dr. Pandit Mali"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">Dr. Pandit Mali</h5>
@@ -277,6 +314,11 @@ export default function About () {
             src={rajiv} 
             className="card-img-top w-50 mx-auto border border-dark border-2"
             alt="Mr. Rajiv Bansal"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">Mr. Rajiv Bansal</h5>
@@ -290,6 +332,11 @@ export default function About () {
             src={sahil} 
             className="card-img-top w-50 mx-auto border border-dark border-2"
             alt="Sahil Tarita Shankar Aditya Mehendale"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">Sahil Tarita Shankar Aditya Mehendale</h5>
@@ -303,6 +350,11 @@ export default function About () {
             src={shaan} 
             className="card-img-top w-50 mx-auto border border-dark border-2"
             alt="Shaan Tarita Shankar Aditya Mehendale"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">Shaan Tarita Shankar Aditya Mehendale</h5>
@@ -322,8 +374,13 @@ export default function About () {
         <div className="card shadow h-100 p-3 m-2">
           <img 
             src={drnileshuke} 
-            className="card-img-top w-50 h-100 mx-auto border border-dark border-2"
+            className="card-img-top w-50  mx-auto border border-dark border-2"
             alt="Dr. Nilesh Uke"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">Dr. Nilesh Uke</h5>
@@ -347,6 +404,11 @@ export default function About () {
             src={Poorna_Shankar} 
             className="card-img-top w-50 mx-auto border border-dark border-2"
             alt="Dr. Poorna Shankar"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h4 className="card-title">Dr. Poorna Shankar</h4>
@@ -362,6 +424,11 @@ export default function About () {
             src={Soumitra_Das} 
             className="card-img-top w-50 mx-auto border border-dark border-2"
             alt="Dr. Soumitra Das"
+            style={{
+              width: '100%',
+              height: '300px',
+              objectFit: 'fill',
+            }}
           />
           <div className="card-body">
             <h4 className="card-title">Dr. Soumitra Das</h4>
