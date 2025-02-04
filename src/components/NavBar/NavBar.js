@@ -30,7 +30,7 @@ export default function NavBar() {
                 position: 'sticky', 
                 top: 0,
                 background: 'linear-gradient(135deg, #1a1f2e 0%, #2d364d 100%)',
-                color: 'white'
+                color: 'white',
             }}
             className="shadow-sm navbar-dark"
             expanded={expanded}
@@ -75,25 +75,16 @@ export default function NavBar() {
                                 className="dropdown-item"
                                 onClick={handleLinkClick}
                             >
-                                Speaker
+                                Keynote Speakers
                             </NavDropdown.Item>
                             <NavDropdown.Item 
                                 as={isAboutPage ? ScrollLink : RouterLink} 
-                                to={isAboutPage ? "CONFERENCE_TRACKS" : "/about#CONFERENCE_TRACKS"} 
+                                to={isAboutPage ? "key-note-speaker" : "/about#key-note-speaker"} 
                                 smooth={true} duration={1000} 
                                 className="dropdown-item"
                                 onClick={handleLinkClick}
                             >
-                                Conference Tracks
-                            </NavDropdown.Item>
-                            <NavDropdown.Item 
-                                as={isAboutPage ? ScrollLink : RouterLink} 
-                                to={isAboutPage ? "ImportantDates" : "/about#ImportantDates"} 
-                                smooth={true} duration={1000} 
-                                className="dropdown-item"
-                                onClick={handleLinkClick}
-                            >
-                                Important Dates
+                                Patrons
                             </NavDropdown.Item>
                             <NavDropdown.Item 
                                 as={isAboutPage ? ScrollLink : RouterLink} 
@@ -102,7 +93,16 @@ export default function NavBar() {
                                 className="dropdown-item"
                                 onClick={handleLinkClick}
                             >
-                                NTAI Committee
+                                Advisory Committee
+                            </NavDropdown.Item>
+                            <NavDropdown.Item 
+                                as={isAboutPage ? ScrollLink : RouterLink} 
+                                to={isAboutPage ? "committee" : "/about#committee"} 
+                                smooth={true} duration={1000} 
+                                className="dropdown-item"
+                                onClick={handleLinkClick}
+                            >
+                                Organising Committee
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link 
