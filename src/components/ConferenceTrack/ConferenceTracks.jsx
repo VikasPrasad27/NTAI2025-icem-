@@ -4,87 +4,71 @@ import Footer from '../Footer/Footer';
 
 const ConferenceTracks = () => {
   const trackData = [
-    {
-      title: "Marketing Strategy and Digital Marketing",
-      topics: [
-        "Consumer Behaviour",
-        "Brand Management",
-        "Marketing Research",
-        "Digital Marketing",
-        "Customer Relationship Management"
-      ]
-    },
-    {
-      title: "Future of Finance",
-      topics: [
-        "Corporate Finance",
-        "Financial Markets",
-        "Investment Analysis",
-        "Financial Reporting",
-        "Risk Management"
-      ]
-    },
-    {
-      title: "Modern Human Resource Management",
-      topics: [
-        "Talent Management",
-        "Organizational Behavior",
-        "Employee Engagement",
-        "Diversity And Inclusion",
-        "Compensation & Benefits"
-      ]
-    },
-    {
-      title: "Entrepreneurship & Start-Ups",
-      topics: [
-        "Venture Capital",
-        "Start-Up Management",
-        "Social Entrepreneurship",
-        "Innovation Ecosystems",
-        "Entrepreneurship Education"
-      ]
-    },
-    {
-      title: "Operations",
-      topics: [
-        "Supply Chain Management",
-        "Operations Management",
-        "Quality Management",
-        "Project Management",
-        "Process Optimization"
-      ]
-    },
-    {
-      title: "Strategic Management And Innovation",
-      topics: [
-        "Corporate Strategy",
-        "Innovation Management",
-        "Change Management",
-        "Business Model Innovation",
-        "Strategic Planning"
-      ]
-    },
-    {
-      title: "Sustainability & Social Entrepreneurship",
-      topics: [
-        "Corporate Social Responsibility",
-        "Sustainable Business Models",
-        "Social Impact",
-        "Environmental Management",
-        "Ethical Business Practices"
-      ]
-    },
-    {
-      title: "Digital Transformation - Analytics, IoT, ML",
-      topics: [
-        "Digital Strategy",
-        "Data Analytics",
-        "IoT Applications",
-        "Machine Learning Implementation",
-        "Digital Innovation"
-      ]
-    }
-  ];
+  {
+    title: "1. Artificial Intelligence and Machine Learning",
+    topics: [
+      "Generative AI for Creative Applications",
+      "Large Language Models and Their Applications",
+      "AI Ethics and Responsible AI",
+      "AI in Healthcare and Precision Medicine",
+      "Reinforcement Learning and Autonomous Systems",
+      "Artificial General Intelligence"
+    ]
+  },
+  {
+    title: "2. Information Technology and Cybersecurity",
+    topics: [
+      "Cloud Computing and Edge AI",
+      "Cybersecurity in the Age of AI",
+      "Big Data Analytics and Predictive Modeling",
+      "Blockchain Technology and Decentralized Systems",
+      "Internet of Things (IoT) and Smart Devices",
+      "Swarm Intelligence"
+    ]
+  },
+  {
+    title: "3. Advanced Computing and Emerging Technologies",
+    topics: [
+      "Quantum Computing and Quantum Algorithms",
+      "Software Engineering for AI Systems",
+      "Human-Computer Interaction and Extended Reality (ER)",
+      "Digital Twins",
+      "High-Performance Computing and Data Centers",
+      "Neuromorphic Computing"
+    ]
+  },
+  {
+    title: "4. Management and Business Innovation",
+    topics: [
+      "Technology Adoption and Change Management",
+      "Business Models for Sustainable Innovation",
+      "Strategic Management of AI Projects",
+      "Sustainable Business Practices with AI",
+      "Technology-Driven Entrepreneurship"
+    ]
+  },
+  {
+    title: "5. Sustainable Engineering and Technology",
+    topics: [
+      "Green Building Technologies",
+      "Renewable Energy Systems",
+      "Smart Cities and Infrastructure",
+      "Water Resource Management",
+      "Sustainable Transportation",
+      "Energy-Efficient Manufacturing"
+    ]
+  },
+  {
+    title: "6. Interdisciplinary Tracks",
+    topics: [
+      "Policy Frameworks for Tech-Driven Sustainability",
+      "Education and Capacity Building with AI Tools",
+      "AI for Environmental Sustainability",
+      "Emerging Technologies in Rural Development",
+      "Legal and Ethical Challenges in Next-Gen Technologies"
+    ]
+  }
+];
 
   return (
     <div>
