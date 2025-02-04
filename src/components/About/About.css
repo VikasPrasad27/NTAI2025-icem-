@@ -232,3 +232,138 @@
 .y-text {
     color: #F5B700;
 }
+/* General Styles */
+.keynote-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Title */
+  .keynote-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Speaker Flexbox */
+  .speaker-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .speaker-flex:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Speaker Image - Slightly Lower */
+  .speaker-img-wrapper-down {
+    position: relative;
+    top: 20px; /* Pushes the image slightly down */
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .speaker-img {
+    width: 100%;
+    object-fit:contain;
+    border: 5px solid #ccc;
+  }
+  
+  /* Speaker Information and Description Flex */
+  .speaker-info-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 700px;
+  }
+  
+  /* Speaker Info */
+  .speaker-info {
+    text-align: left;
+  }
+  
+  .speaker-name {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: orangered;
+  }
+  
+  .speaker-title {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .speaker-department {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+  }
+  
+  /* Speaker Description */
+  .speaker-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .speaker-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .speaker-info-flex {
+      align-items: center;
+    }
+  
+    .speaker-description {
+      text-align: left;
+    }
+  }
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; /* mt-12 equivalent */
+  }
+  
+  .host-institute-image {
+    width: 66.66%; /* w-2/3 equivalent */
+    height: auto;
+    border-radius: 0.75rem; /* rounded-lg equivalent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg equivalent */
+    transition: width 0.3s ease; /* Smooth transition for size change */
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .host-institute-image {
+      width: 90%; /* Make the image smaller on smaller screens */
+    }
+  }
+  
+  /* For extra small screens */
+  @media (max-width: 480px) {
+    .host-institute-image {
+      width: 100%; /* Full width for very small screens */
+    }
+  }
+  
