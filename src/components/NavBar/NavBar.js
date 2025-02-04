@@ -18,10 +18,6 @@ export default function NavBar() {
         setExpanded(false);
     };
 
-    const navLinkStyle = {
-        color: 'white !important'
-    };
-
     return (
         <Navbar 
             expand="lg" 
@@ -35,15 +31,15 @@ export default function NavBar() {
             className="shadow-sm navbar-dark"
             expanded={expanded}
         >
-            <Container>
-                <Navbar.Brand href="#">
+            <Container fluid style={{ paddingLeft: '0', marginLeft: '0px' }}> {/* Fluid container with no left padding */}
+                <Navbar.Brand href="#" style={{ marginLeft: '10px' }}> {/* No margin for the brand */}
                     <img 
                         src={icemlogo} 
-                        width="280" 
-                        height="200" 
+                        width="250" 
+                        height="auto" 
                         className="d-inline-block align-top" 
                         alt="ICEM Logo"
-                        style={{ maxWidth: '100%', height: 'auto', background: 'none' }}
+                        style={{ maxWidth: '100%', background: 'none' }}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle 
@@ -79,7 +75,7 @@ export default function NavBar() {
                             </NavDropdown.Item>
                             <NavDropdown.Item 
                                 as={isAboutPage ? ScrollLink : RouterLink} 
-                                to={isAboutPage ? "key-note-speaker" : "/about#key-note-speaker"} 
+                                to={isAboutPage ? "patrons" : "/about#patrons"} 
                                 smooth={true} duration={1000} 
                                 className="dropdown-item"
                                 onClick={handleLinkClick}
