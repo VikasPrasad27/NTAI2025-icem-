@@ -64,16 +64,18 @@ const Committee = () => {
           {advisoryCommittee.map((member, index) => (
             <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div className="card shadow h-100 p-3 m-2">
-                <img
-                  src={member.image}
-                  className="card-img-top"
-                  alt={member.name}
-                  style={{
-                    width: '100%',
-                    height: '300px',
-                    objectFit: 'fill',
-                  }}
-                />
+                <div className="card-img-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <img
+                    src={member.image}
+                    className="card-img-top"
+                    alt={member.name}
+                    style={{
+                      width: '80%',
+                      height: '200px',
+                      objectFit: 'fill',  // Ensuring the image is centered and maintains its aspect ratio
+                    }}
+                  />
+                </div>
                 <div className="card-body text-center">
                   <h5 className="card-title">{member.name}</h5>
                   <p className="card-text">{member.title}</p>
@@ -93,18 +95,20 @@ const Committee = () => {
           {programChairs.map((chair, index) => (
             <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div className="card shadow h-100 p-3 m-2">
-                <img
-                  src={chair.image}
-                  className="card-img-top"
-                  alt={chair.name}
-                  style={{
-                    width: '100%',
-                    height: '300px',
-                    objectFit: 'fill',
-                  }}
-                />
+                <div className="card-img-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <img
+                    src={chair.image}
+                    className="card-img-top"
+                    alt={chair.name}
+                    style={{
+                      width: '80%',
+                      height: '200px',
+                      objectFit: 'fill',  // Ensuring the image is centered and maintains its aspect ratio
+                    }}
+                  />
+                </div>
                 <div className="card-body text-center">
-                  <h5 className="card-title ">{chair.name}</h5>
+                  <h5 className="card-title">{chair.name}</h5>
                   <p className="card-text">{chair.title}</p>
                 </div>
               </div>
@@ -122,16 +126,18 @@ const Committee = () => {
           {organisingCommittee.map((member, index) => (
             <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div className="card shadow h-100 p-3 m-2">
-                <img
-                  src={member.image}
-                  className="card-img-top"
-                  alt={member.name}
-                  style={{
-                    width: '100%',
-                    height: '300px',
-                    objectFit: 'fill',
-                  }}
-                />
+                <div className="card-img-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <img
+                    src={member.image}
+                    className="card-img-top"
+                    alt={member.name}
+                    style={{
+                      width: '80%',
+                      height: '200px',
+                      objectFit: 'fill',  // Ensuring the image is centered and maintains its aspect ratio
+                    }}
+                  />
+                </div>
                 <div className="card-body text-center">
                   <h5 className="card-title">{member.name}</h5>
                   <p className="card-text">{member.title}</p>
