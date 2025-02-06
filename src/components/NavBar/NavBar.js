@@ -18,6 +18,10 @@ export default function NavBar() {
         setExpanded(false);
     };
 
+    const navLinkStyle = {
+        color: 'white !important'
+    };
+
     return (
         <Navbar 
             expand="lg" 
@@ -28,18 +32,18 @@ export default function NavBar() {
                 background: 'linear-gradient(135deg, #1a1f2e 0%, #2d364d 100%)',
                 color: 'white',
             }}
-            className="shadow-sm navbar-dark"
+            className="shadow-sm navbar-dark "
             expanded={expanded}
         >
-            <Container fluid style={{ paddingLeft: '0', marginLeft: '0px' }}> {/* Fluid container with no left padding */}
-                <Navbar.Brand href="#" style={{ marginLeft: '10px' }}> {/* No margin for the brand */}
+            <Container >
+                <Navbar.Brand href="#">
                     <img 
                         src={icemlogo} 
-                        width="250" 
-                        height="auto" 
+                        width="200" 
+                        height="200" 
                         className="d-inline-block align-top" 
                         alt="ICEM Logo"
-                        style={{ maxWidth: '100%', background: 'none' }}
+                        style={{ maxWidth: '100%', height: 'auto', background: 'none' }}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle 
@@ -75,7 +79,7 @@ export default function NavBar() {
                             </NavDropdown.Item>
                             <NavDropdown.Item 
                                 as={isAboutPage ? ScrollLink : RouterLink} 
-                                to={isAboutPage ? "patrons" : "/about#patrons"} 
+                                to={isAboutPage ? "key-note-speaker" : "/about#key-note-speaker"} 
                                 smooth={true} duration={1000} 
                                 className="dropdown-item"
                                 onClick={handleLinkClick}
@@ -132,6 +136,14 @@ export default function NavBar() {
                             onClick={handleLinkClick}
                         >
                             Publication
+                        </Nav.Link>
+                        <Nav.Link 
+                            as={RouterLink} 
+                            to="/Submission" 
+                            className="mx-3 custom-nav-link text-white" 
+                            onClick={handleLinkClick}
+                        >
+                            Submission
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
