@@ -74,6 +74,10 @@ export default function Footer() {
                                     className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
                                     <TbWorld /> NTAI25
                                 </a>
+                                        <a href="/about#/about#key-note-speaker"
+                                    className="me-4 text-white mb-3 text-decoration-none hover:text-opacity-80">
+                                    <TbWorld /> ImportantDates
+                                </a>
                             </div>
                         </Col>
                         <Col md={4} lg={3} xl={3} className="mx-auto mb-md-0 mb-4">
