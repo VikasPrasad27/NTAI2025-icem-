@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ConferenceTracks from './components/ConferenceTrack/ConferenceTracks';
 import Objective from './components/Objective/Objective';
 import Publication from './components/Publication/Publication';
+import SubmissionPage from './components/SubmissionPage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/Objective" element={<Objective/> }/>
                 <Route path="/Publication" element={<Publication/>}/>
+                <Route path="/Submission" element={<SubmissionPage/>}/>
             </Routes>
         </Router>
     );
