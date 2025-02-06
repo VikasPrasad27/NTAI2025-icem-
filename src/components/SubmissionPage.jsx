@@ -240,6 +240,10 @@ const SubmissionPage = () => {
           </div>
         </div>
         <div className="track-card">
+          <h1 className="section-title">Submission of Full Paper</h1>
+          <p>Prospective authors will submit their research paper through Microsoft CMT portal: <a style={{ color: "#ff6600" }} href="https://cmt3.research.microsoft.com/docs/help/index.html">Click Here for CMT portal </a></p>
+        </div>
+        <div className="track-card">
               <h3 style={{ color: '#ff6600' }}>FAQs</h3>
               <div className="faq-container">
                 {faqs.map((faq, index) => (
