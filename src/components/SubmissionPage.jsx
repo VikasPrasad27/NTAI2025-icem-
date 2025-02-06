@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
+import Footer from './Footer/Footer';
 
 const SubmissionPage = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -6,13 +7,12 @@ const SubmissionPage = () => {
   const faqs = [
     {
       question: "How do I submit my abstract?",
-      answer: "Submit your abstract via email to submission_ICCSAS25@bkkdc.edu.in with full author details, including names, email IDs, and mobile numbers."
+      answer: "Submit your abstract via Microsoft CMT portal with full author details, including names, email IDs, and mobile numbers."
     },
     {
       question: "What are the poster specifications?",
       answer: "Posters should be 36 × 48 inches (91 × 122 cm) in portrait orientation, with clear title, authors, methodology, results, and legible text."
     },
-    
     {
       question: "What file format should I use?",
       answer: "Submit digital posters in PDF format, with file size not exceeding 10 MB. Name the file as 'LastName_FirstName_Poster.pdf'."
@@ -37,9 +37,9 @@ const SubmissionPage = () => {
         }
         .submission-container {
           font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          background: linear-gradient(135deg, #1a1f2e 0%, #2d364d 100%);
+          background: #ffffff;
           min-height: 100vh;
-          color: #ffffff;
+          color: #333333;
           line-height: 1.6;
         }
         .content-wrapper {
@@ -48,7 +48,7 @@ const SubmissionPage = () => {
           padding: 40px 20px;
         }
         .track-card {
-          background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+          background: #ffffff;
           border-radius: 1rem;
           overflow: hidden;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -56,13 +56,15 @@ const SubmissionPage = () => {
           position: relative;
           padding: 30px;
           margin-bottom: 20px;
+          border: 2px solid #ff6600;
+          text-align: left; /* Align text to the left */
         }
         .track-card:hover {
           transform: translateY(-10px);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
         .section-title {
-          color: #ffffff;
+          color: #ff6600;
           border-bottom: 2px solid rgba(255,255,255,0.2);
           padding-bottom: 10px;
           margin-bottom: 20px;
@@ -81,24 +83,29 @@ const SubmissionPage = () => {
           position: relative;
           padding-left: 25px;
           margin-bottom: 10px;
-          color: rgba(255,255,255,0.9);
+          color: #ff6600;
         }
         .list-style li:before {
           content: '•';
-          color: #ffffff;
+          color: #ff6600;
           position: absolute;
           left: 0;
           font-weight: bold;
         }
         .cta-button {
           display: inline-block;
-          background: white;
-          color: #2563eb;
+          background: #ff6600;
+          color: #ffffff;
           padding: 12px 25px;
           border-radius: 6px;
           text-decoration: none;
           font-weight: bold;
           transition: transform 0.3s ease;
+        }
+        .cta-button-container {
+          display: flex;
+          justify-content: flex-start; /* Align buttons to the left */
+          margin-top: 20px;
         }
         .cta-button:hover {
           transform: translateY(-3px);
@@ -118,7 +125,7 @@ const SubmissionPage = () => {
         }
         .faq-question {
           background: rgba(255,255,255,0.1);
-          color: #ffffff;
+          color: #ff6600;
           padding: 15px;
           cursor: pointer;
           display: flex;
@@ -129,7 +136,7 @@ const SubmissionPage = () => {
           padding: 15px;
           background: rgba(255,255,255,0.05);
           display: none;
-          color: rgba(255,255,255,0.8);
+          color: #ff6600;
         }
         .faq-answer.active {
           display: block;
@@ -140,13 +147,13 @@ const SubmissionPage = () => {
           }
         }
       `}</style>
-      
+
       <div className="content-wrapper">
         <div className="track-card">
-          <h1 className="section-title">Poster Presentation Submission</h1>
+          <h2 className="section-title">Poster Presentation Submission</h2>
           <div className="grid">
             <div>
-              <h2 style={{color: '#ffffff'}}>1. Poster Specifications</h2>
+              <h2 style={{ color: '#ff6600', textAlign: 'left' }}>Poster Specifications</h2> {/* Align to left */}
               <ul className="list-style">
                 <li>Dimensions: 36 × 48 inches (91 × 122 cm), portrait orientation</li>
                 <li>Include title, authors, affiliations, abstract</li>
@@ -155,27 +162,25 @@ const SubmissionPage = () => {
                 <li>High-contrast, clean layout</li>
               </ul>
             </div>
-            
+
             <div>
-              <h2 style={{color: '#ffffff'}}>2. Digital Poster Submission</h2>
+              <h2 style={{ color: '#ff6600', textAlign: 'left' }}>Digital Poster Submission</h2> {/* Align to left */}
               <ul className="list-style">
                 <li>PDF format only</li>
                 <li>Max file size: 10 MB</li>
                 <li>Filename: 'LastName_FirstName_Poster.pdf'</li>
-                <li>contact to: research@indiraicem.ac.in</li>
-                <li>Deadline: 20 Febraury 2025</li>
+                <li>Contact: research@indiraicem.ac.in</li>
+                <li>Deadline: 20 February 2025</li>
               </ul>
             </div>
           </div>
-         
-
         </div>
 
         <div className="track-card">
           <h2 className="section-title">Submission Guidelines</h2>
           <div className="grid">
             <div>
-              <h3 style={{color: '#ffffff'}}>Abstract Submission</h3>
+              <h3 style={{ color: '#ff6600' }}>Abstract Submission</h3>
               <ul className="list-style">
                 <li>Email: research@indiraicem.ac.in</li>
                 <li>Full author and co-author details</li>
@@ -183,19 +188,19 @@ const SubmissionPage = () => {
                 <li>Match registration form names</li>
                 <li>Acknowledgement within 7 days</li>
               </ul>
-              <div className="text-center mt-4">
-  <a 
-    href="https://docs.google.com/uc?export=download&id=1ykMUkpWrwfS1Gx6Ld1rLScFrgCGGAInx" 
-    className="cta-button" 
-    download="AbstractTemplate.docx"
-  >
-    Download Sample Abstract
-  </a>
-</div>
+              <div className="cta-button-container">
+                <a 
+                  href="https://docs.google.com/uc?export=download&id=1ykMUkpWrwfS1Gx6Ld1rLScFrgCGGAInx" 
+                  className="cta-button" 
+                  download="AbstractTemplate.docx"
+                >
+                  Download Sample Abstract
+                </a>
+              </div>
             </div>
-            
+
             <div>
-              <h3 style={{color: '#ffffff'}}>Full Paper Submission</h3>
+              <h3 style={{ color: '#ff6600' }}>Full Paper Submission</h3>
               <ul className="list-style">
                 <li>Submit after abstract acceptance</li>
                 <li>Follow website template</li>
@@ -203,84 +208,62 @@ const SubmissionPage = () => {
                 <li>Plagiarism check required</li>
                 <li>Registration fee: Visit Registration Page-</li>
               </ul>
-              <div className="text-center mt-4">
-  <a 
-    href="https://docs.google.com/uc?export=download&id=1Sx1Qm_R1r-XeJXQPRCQ0BhPguf65mbjq" 
-    className="cta-button" 
-    download="AbstractTemplate.docx"
-  >
-    Download Sample Paper
-  </a>
-</div>
-
+              <div className="cta-button-container">
+                <a 
+                  href="https://docs.google.com/uc?export=download&id=1Sx1Qm_R1r-XeJXQPRCQ0BhPguf65mbjq" 
+                  className="cta-button" 
+                  download="SamplePaper.docx"
+                >
+                  Download Sample Paper
+                </a>
+              </div>
             </div>
           </div>
-          
+
           <div className="grid mt-4">
             <div>
-              <h3 style={{color: '#ffffff'}}>Paper Categories</h3>
+              <h3 style={{ color: '#ff6600' }}>Paper Categories</h3>
               <ul className="list-style">
                 <li>Research Papers: Original research in next-gen tech and AI</li>
                 <li>Review Papers: Reviews of current advancements and future trends</li>
                 <li>Case Studies: Real-world applications of sustainable technologies</li>
                 <li>Posters: Visual presentations of innovative ideas and early research</li>
               </ul>
-              
-            </div>
-
-            <div>
-              <h3 style={{color: '#ffffff'}}>Formatting and Submission</h3>
-              <ul className="list-style">
-                <li>Submit papers in LaTeX or PDF format</li>
-                <li>Follow the guidelines provided on the website</li>
-                <li>Use high-quality images and diagrams</li>
-                <li>Ensure clarity and coherence in writing</li>
-              </ul>
-              
-            </div>
-            
-          </div>
-          
-
-
-          <div className="text-center mt-4">
+              <div  className="cta-button-container">
             <a href="https://cmt3.research.microsoft.com/" className="cta-button">
               Submit via CMT Portal
             </a>
           </div>
-        </div>
-        <div className="track-card">
-          <h1 className="section-title">Submission of full paper</h1>
-         <p>Prospective authors will submit their research paper through Microsoft
-         CMT portal: <a style={{color:"whitesmoke"}} href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F">Click</a></p>
             </div>
 
-
-
-        <div className="track-card">
-          <h2 className="section-title">FAQs</h2>
-          <div className="faq-container">
-            {faqs.map((faq, index) => (
-              <div className="faq-item" key={index}>
-                <div
-                  className="faq-question"
-                  onClick={() => toggleDropdown(index)}
-                >
-                  {faq.question}
-                  <span>{activeDropdown === index ? '-' : '+'}</span>
-                </div>
-                <div
-                  className={`faq-answer ${activeDropdown === index ? 'active' : ''}`}
-                >
-                  {faq.answer}
-                </div>
-              </div>
-            ))}
+            
           </div>
         </div>
+        <div className="track-card">
+              <h3 style={{ color: '#ff6600' }}>FAQs</h3>
+              <div className="faq-container">
+                {faqs.map((faq, index) => (
+                  <div className="faq-item" key={index}>
+                    <div 
+                      className="faq-question" 
+                      onClick={() => toggleDropdown(index)}
+                    >
+                      {faq.question}
+                      <span>{activeDropdown === index ? "-" : "+"}</span>
+                    </div>
+                    <div 
+                      className={`faq-answer ${activeDropdown === index ? 'active' : ''}`}
+                    >
+                      {faq.answer}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
       </div>
+      <Footer />
     </div>
   );
-};
+}
 
 export default SubmissionPage;
