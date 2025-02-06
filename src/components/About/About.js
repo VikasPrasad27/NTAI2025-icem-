@@ -69,8 +69,9 @@ export default function About() {
           <div className="ICLVE text-center">
             <div className="max-w-3xl mx-auto">
               <p className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md text-gray-700 text-lg leading-relaxed">
-                Welcome to the "Next-Gen Technology and AI for a Sustainable Future" conference, hosted by Indira College of Engineering and Management, Pune. This premier event brings together leading experts, researchers, and innovators from around the globe to explore the latest advancements in technology and artificial intelligence, with a focus on creating a sustainable future.
-              </p>
+              Indira College of Engineering and Management, Pune, is proud to host the International Conference on "Next-Gen Technology and AI for a Sustainable Future," a global forum that brings together researchers, academicians, industry professionals, and technology leaders to explore cutting-edge advancements shaping the future. This conference aims to address the rapid evolution of Artificial Intelligence, Cybersecurity, Advanced Computing, and Sustainable Technologies, fostering discussions on their transformative impact across industries. By bridging academia and industry, the event will highlight innovative solutions, emerging research, and practical applications that drive sustainable growth and technological progress.<br/>
+
+With a strong emphasis on next-generation intelligence, security, and sustainability, the conference will serve as a catalyst for thought leadership, collaboration, and interdisciplinary innovation. Experts from diverse domains will present pioneering research, discuss challenges, and explore forward-looking strategies in AI, digital transformation, green engineering, and business innovation. The conference also provides a unique opportunity to network with industry experts, researchers, and academicians, fostering collaborations and knowledge exchange on cutting-edge technological advancements. Attendees will have the opportunity to engage in dynamic discussions, exchange groundbreaking ideas, and contribute to shaping a technology-driven future that is intelligent, secure, and sustainable.              </p>
             </div>
 
             {/* Host Institute Section */}
@@ -80,7 +81,7 @@ export default function About() {
               </h2>
               <div className="max-w-3xl mx-auto">
                 <p className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md text-gray-700 text-lg leading-relaxed">
-                  Indira College of Engineering and Management (ICEM), established in 2007, is a premier autonomous institution under the Indira Group of Institutes, affiliated with Savitribai Phule Pune University and accredited by NAAC. ICEM offers a range of undergraduate and postgraduate programs in engineering and management, with a strong focus on innovation, research, and sustainable development.
+                Indira College of Engineering and Management (ICEM), Pune, is distinguished by its expansive 40-acre campus and state-of-the-art infrastructure. The institution, which holds NAAC accreditation and autonomous status granted by UGC, offers undergraduate and postgraduate programs in various engineering disciplines, including Computer Engineering, Mechanical Engineering, Civil Engineering, Electronics and Telecommunication Engineering, Information Technology, and Artificial Intelligence & Data Science Engineering. Additionally, ICEM provides robust management programs, including regular MBA and MCA, as well as integrated MBA and MCA programs12. The faculty at ICEM comprises experienced and highly qualified professionals dedicated to imparting quality education and fostering a research-oriented mindset among students. The college emphasizes continuous professional development for its faculty members, encouraging them to engage in research, attend conferences, and collaborate with industry experts.The college boasts state-of-the-art facilities, industry collaborations, and a commitment to shaping future leaders and innovators. Join us at ICEM for the "Next-Gen Technology and AI for a Sustainable Future" conference to explore cutting-edge advancements and sustainable solutions.
                 </p>
               </div>
 
@@ -160,7 +161,7 @@ export default function About() {
 
       <section id="key-note-speaker" className="keynote-section">
         <div className="container">
-          <h2 className="keynote-title">Keynote Speaker</h2>
+          <h2 className="keynote-title">Keynote Speakers</h2>
 
           {/* Speaker 1 */}
           <div className="speaker-flex">
@@ -282,7 +283,7 @@ export default function About() {
                   alt="Prof. Chetan Wakalkar"
                   style={{
                     width: '100%',
-                    height: '300px',
+                    height: '250px',
                     objectFit: 'fill',
                   }}
                 />
@@ -301,7 +302,7 @@ export default function About() {
                   alt="Dr. Pandit Mali"
                   style={{
                     width: '100%',
-                    height: '300px',
+                    height: '250px',
                     objectFit: 'fill',
                   }}
                 />
@@ -320,7 +321,7 @@ export default function About() {
                   alt="Mr. Rajiv Bansal"
                   style={{
                     width: '100%',
-                    height: '300px',
+                    height: '250px',
                     objectFit: 'fill',
                   }}
                 />
@@ -339,13 +340,13 @@ export default function About() {
                   alt="Sahil Tarita Shankar Aditya Mehendale"
                   style={{
                     width: '100%',
-                    height: '300px',
+                    height: '250px',
                     objectFit: 'fill',
                   }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">Sahil Tarita Shankar Aditya Mehendale</h5>
-                  <h6>Trustee - Indira Group of Institutes</h6>
+                  <h6>Trustee -Shree Chanakya Education Society</h6>
                 </div>
               </div>
             </div>
@@ -358,13 +359,13 @@ export default function About() {
                   alt="Shaan Tarita Shankar Aditya Mehendale"
                   style={{
                     width: '100%',
-                    height: '300px',
+                    height: '250px',
                     objectFit: 'fill',
                   }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">Shaan Tarita Shankar Aditya Mehendale</h5>
-                  <h6>Trustee - Indira Group of Institutes</h6>
+                  <h6>Trustee - Shree Chanakya Education Society</h6>
                 </div>
               </div>
             </div>
@@ -419,7 +420,7 @@ export default function About() {
                 />
                 <div className="card-body">
                   <h4 className="card-title">Dr. Poorna Shankar</h4>
-                  <p className="card-text">Dean R&D, ICEM</p>
+                  <p className="card-text">Professsor and Dean R&D, ICEM</p>
                   <h5 className="card-text">Convener</h5>
                 </div>
               </div>
@@ -459,7 +460,7 @@ export default function About() {
             <Card.Body className="flex-grow-1">
               <Card.Title><h2 className="y-text">Conference</h2></Card.Title>
               <Card.Subtitle className="mb-2 text-muted"><h3
-                className="lead">12<sup>th</sup>April 2025</h3></Card.Subtitle>
+                className="lead">12<sup>th</sup>13<sup>th</sup>April 2025</h3></Card.Subtitle>
               <Card.Text><p className="text-secondary">Indira College Of Engineering and Management, Parandwadi, Pune</p>
               </Card.Text>
             </Card.Body>
