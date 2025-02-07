@@ -5,6 +5,7 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import '../../App.css';
 import icemlogo from "../../assets/images/Committee/ICEM-Logo.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Banner from '../Banner/Banner';
 
 export default function NavBar() {
     const [open, setOpen] = useState(false);
@@ -23,7 +24,12 @@ export default function NavBar() {
     };
 
     return (
-        <Navbar 
+        <div>
+            <div>
+            <Banner/>
+            </div>
+           <div>
+           <Navbar 
             expand="lg" 
             style={{ 
                 zIndex: 9999, 
@@ -36,6 +42,7 @@ export default function NavBar() {
             expanded={expanded}
         >
             <Container >
+                
                 <Navbar.Brand href="#">
                     <img 
                         src={icemlogo} 
@@ -167,5 +174,9 @@ export default function NavBar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+           </div>
+           
+        </div>
+        
     );
 }
