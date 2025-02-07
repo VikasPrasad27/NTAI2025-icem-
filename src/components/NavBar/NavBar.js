@@ -70,6 +70,24 @@ export default function NavBar() {
                         >
                             <NavDropdown.Item 
                                 as={isAboutPage ? ScrollLink : RouterLink} 
+                                to={isAboutPage ? "ICLVE-2023" : "/about#ICLVE-2023"} 
+                                smooth={true} duration={1000} 
+                                className="dropdown-item"
+                                onClick={handleLinkClick}
+                            >
+                                About the Host Intitute
+                            </NavDropdown.Item>
+                            <NavDropdown.Item 
+                                as={isAboutPage ? ScrollLink : RouterLink} 
+                                to={isAboutPage ? "ICLVE-2023" : "/about#ICLVE-2023"} 
+                                smooth={true} duration={1000} 
+                                className="dropdown-item"
+                                onClick={handleLinkClick}
+                            >
+                                About the Conference
+                            </NavDropdown.Item>
+                            <NavDropdown.Item 
+                                as={isAboutPage ? ScrollLink : RouterLink} 
                                 to={isAboutPage ? "key-note-speaker" : "/about#key-note-speaker"} 
                                 smooth={true} duration={1000} 
                                 className="dropdown-item"
