@@ -456,12 +456,13 @@ With a strong emphasis on next-generation intelligence, security, and sustainabi
           <h2 className="mb-5">Conference Venue</h2>
 
 
-          <Card className="mb-4  d-flex flex-column">
+         <Card className="mb-4  d-flex flex-column">
             <Card.Body className="flex-grow-1">
               <Card.Title><h2 className="y-text">Conference</h2></Card.Title>
               <Card.Subtitle className="mb-2 text-muted"><h3
-                className="lead">12<sup>th</sup>13<sup>th</sup>April 2025</h3></Card.Subtitle>
+                className="lead">12<sup>th</sup> & 13<sup>th</sup>April 2025</h3></Card.Subtitle>
               <Card.Text><p className="text-secondary">Indira College Of Engineering and Management, Parandwadi, Pune</p>
+              <p className="text-secondary">Hybrid Mode</p>
               </Card.Text>
             </Card.Body>
             <div className=" lg:flex justify-center items-center">
